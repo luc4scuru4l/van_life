@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF7ED;
+  font-family: Inter, sans-serif;
+  min-width: 548px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  /* Ocultan la barra de scroll */
+  -ms-overflow-style: none; /* Firefox */
+  scrollbar-width: none; /*IE y Edge*/
+}
+
+.main-container {
+  width: 494px;
+  margin-inline: auto;
+}
+
+header {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin-inline: auto;
+  width: 494px;
+}
+
+header .site-logo {
+  color:black;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #4D4D4D;
+  font-weight: 600;
+  /*padding: 5px 20px;*/
+}
+
+header a:hover{
+  color: #161616;
+  text-decoration: underline;
+}
+
+.home-container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./assets/images/home_background.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+  min-height: 350px;
+  color: white;
+}
+
+.home-container h1 {
+  margin: 0px;
+  padding-top: 66px;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 42px;
+}
+
+.home-container p {
+  line-height: 24px;
+}
+/* 
+.home-container a {
+   
+} */
+
+.main-button {
+  background-color: #FF8C38;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  transition: transform .1s ease-in-out;
+  font-weight: 700;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  width: 100%;
+  margin-top: 27px;
+  padding-block: .75rem;
+}
+
+.home-container a:hover {
+  transform: translate(1px, 1px);
+}
+
+.footer {
+  background-color: #252525;
+  color: #AAAAAA;
+  font-family: Inter, serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.92px;
+  text-align: center;
+  min-height: 74.75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*position: fixed;*/
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.vans-container h1 {
+  font-size: 34px;
+  line-height: 33.65px;
+  font-weight: 700;
+  /*padding-left: 20px;*/
+}
+
+.vans-filters {
+  display: flex;
+  justify-content: space-between;
+  /*padding-inline: 20px;*/
+  height: 36px;
+}
+
+.vans-filters div {
+  display: flex;
+  gap: 20px;
+}
+
+.vans-filters button {
+  background-color: #FFEAD0;
+  border-radius: 5px;
+  padding-inline: 20px;
+  border-style: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.92px;
+  color: #4D4D4D
+}
+
+#clear {
+  background-color: inherit;
+  text-decoration: underline;
+  text-wrap: nowrap;
+  padding: 0;
+}
+
+.vans-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33.98px;
+  margin-block: 55px;
+  padding-inline: 20px;
+  justify-content: center;
+}
+
+.vans-cards article img{
+  max-width: 229.29px;
+  border-radius: 5px;
+}
+
+.van-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  line-height: 31.66px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.vans-cards article a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.van-info h4 {
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.van-info span{
+  position: relative;
+}
+
+.van-info span::before{
+  content: "$";
+}
+
+.van-info span::after{
+  content: "/day";
+  position: absolute;
+  top: 25px;
+  left: 7px;
+  font-weight: 500;
+  font-size: 14px;
+  overflow-x: visible;
+}
+/*.vans-cards article */
+.tag {
+  display: inline-block;
+  border-radius: 5px;
+  color: #FFEAD0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 31.66px;
+  height: 33.89px; 
+  padding-inline: 15px;
+  margin-top: 15px;
+}
+
+.luxury-tag{
+  background-color: #161616;
+}
+
+.simple-tag{
+  background-color: #E17654;
+}
+
+.rugged-tag{
+  background-color: #115E59;
+}
+
+/* VAN DETAIL*/
+.back {
+  display: block;
+  color: #201F1D;
+  margin-top: 39.87px;
+  font-family: Inter, serif;
+}
+
+.back::before{
+  content: '← ';
+  text-decoration: none;
+}
+
+.van-detail {
+  margin-inline: auto;
+  max-width: 494px;
+}
+
+.van-detail img {
+  display: block;
+  margin-top: 40px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.van-detail .tag {
+  margin-top: 50px;
+}
+
+.van-detail .main-button {
+  margin-bottom: 84px;
+}
