@@ -124,6 +124,31 @@ header a:hover{
   right: 0;
 }
 
+/* About */
+.bg-image{
+  display: block;
+  margin-inline: auto;
+}
+
+.card {
+  background-color: #FFCC8D;
+  border-radius: 5px;
+  padding-left: 37px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  margin-bottom: 58px;
+}
+
+.card button {
+  background-color: #161616;
+  width: auto;
+  padding-inline: 22px;
+}
+
+.card h2{
+  margin: 0;
+}
+
 .vans-container h1 {
   font-size: 34px;
   line-height: 33.65px;
