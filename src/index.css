@@ -42,20 +42,19 @@ header .site-logo {
   font-size: 25px;
 }
 
-header nav {
+.tabs{
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-header nav a {
+.tab-title{
   text-decoration: none;
   color: #4D4D4D;
   font-weight: 600;
-  /*padding: 5px 20px;*/
 }
 
-header a:hover{
+.tab-title:hover{
   color: #161616;
   text-decoration: underline;
 }
@@ -295,4 +294,9 @@ header a:hover{
 
 .van-detail .main-button {
   margin-bottom: 84px;
+}
+
+/* Host page */
+main .tabs {
+  justify-content: left;
 }
